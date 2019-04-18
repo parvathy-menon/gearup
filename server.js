@@ -3,9 +3,8 @@ const mongoose = require("mongoose");
 const bodyParser = require("body-parser");
 const passport = require("passport");
 
-const users = require("./routes/api/users");
-
 const app = express();
+const users = require("./routes/api/users");
 
 // Bodyparser middleware
 app.use(
@@ -29,10 +28,8 @@ mongoose
 
 // Passport middleware
 app.use(passport.initialize());
-
 // Passport config
 require("./config/passport")(passport);
-
 // Routes
 app.use("/api/users", users);
 
