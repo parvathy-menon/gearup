@@ -1,8 +1,8 @@
 {
   "name": "gearup",
   "version": "1.0.0",
-  "description": "Gear Up App",
-  "main": "server.js",
+  "description": "",
+  "main": "index.js",
   "scripts": {
     "client-install": "npm install --prefix client",
     "start": "node server.js",
