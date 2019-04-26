@@ -31,6 +31,7 @@
     "mongoose": "^5.5.2",
     "passport": "^0.4.0",
     "passport-jwt": "^4.0.0",
+    "react-css-grid": "^2.0.0-0",
     "validator": "^10.11.0"
   },
   "devDependencies": {

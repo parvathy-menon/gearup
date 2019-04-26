@@ -1,4 +1,5 @@
 import React, { Component } from "react";
+import {BrowserRouter as Router, Route, Link, NavLink} from 'react-router-dom';
 import PropTypes from "prop-types";
 import { connect } from "react-redux";
 import { logoutUser } from "../../actions/authActions";
@@ -33,6 +34,10 @@ class Dashboard extends Component {
               Logout
             </button>
           </div>
+          <NavLink to="/admin_dashboard">Admin Dashboard</NavLink><br></br>
+          <NavLink to="/manager_dashboard">Manager Dashboard</NavLink> <br></br>
+          <NavLink to="/instructor_dashboard">Instructor Dashboard</NavLink> <br></br>
+          <NavLink to="/member_dashboard">Member Dashboard</NavLink>
         </div>
       </div>
     );
