@@ -16,7 +16,7 @@
 }
 
 .header { grid-area: header; height: 10vh; background-color: #FEAAAA;}
-.menu { grid-area: menu; height: 90vh; background-color: #FEAAAA; text-align: center;}
+.menu { grid-area: menu; height: 100vh; background-color: #FEAAAA; text-align: center;}
 .main { grid-area: main; height: 80vh;}
 .profile { grid-area: profile; background-color: white;}
 .logout { grid-area: logout; background-color: white;}
@@ -28,7 +28,7 @@
   display: grid;
   grid-template-columns: 10% auto;
   grid-template-areas:
-    'header header'
+    'menu header'
     'menu main';
   background-color: white;
   width: 100%;
@@ -37,12 +37,12 @@
 
 .header-grid {
   display: grid;
-  grid-template-columns: 1% 5% auto 10% 1%;
+  grid-template-columns: 5% auto 10% 1%;
   grid-template-rows: 1vh auto 1vh;
   grid-template-areas:
-    '. . . . .'
-    '. profile . logout .'
-    '. . . . .';
+    '. . . .'
+    '. . logout .'
+    '. . . .';
   width: 100%;
   height: 10vh;
 }
@@ -50,8 +50,9 @@
 .admin-menu-grid {
     display: grid;
     grid-template-columns: 10% auto 10%;
-    grid-template-rows: 1vh 10vh 1vh 10vh 1vh 10vh auto;
+    grid-template-rows: 10vh 1vh 10vh 1vh 10vh 1vh 10vh auto;
     grid-template-areas:
+      '. . .'
       '. . .'
       '. managers .'
       '. . .'
@@ -61,14 +62,15 @@
       '. . .';
     
     width: 100%;
-    height: 90vh;
+    height: 100vh;
 }
 
 .manager-menu-grid {
     display: grid;
     grid-template-columns: 10% auto 10%;
-    grid-template-rows: 1vh 10vh 1vh 10vh 1vh 10vh auto;
+    grid-template-rows: 10vh 1vh 10vh 1vh 10vh 1vh 10vh auto;
     grid-template-areas:
+      '. . .'
       '. . .'
       '. instructors .'
       '. . .'
@@ -77,15 +79,16 @@
       '. managers .'
       '. . .';
     width: 100%;
-    height: 90vh;
+    height: 100vh;
 }
 
 
 .instructor-menu-grid {
     display: grid;
     grid-template-columns: 10% auto 10%;
-    grid-template-rows: 1vh 10vh 1vh 10vh 1vh 10vh auto;
+    grid-template-rows: 10vh 1vh 10vh 1vh 10vh 1vh 10vh auto;
     grid-template-areas:
+      '. . .'
       '. . .'
       '. members .'
       '. . .'
@@ -94,14 +97,17 @@
       '. managers .'
       '. . .';
     width: 100%;
-    height: 90vh;
+    height: 100vh;
 }
 
 .member-menu-grid {
     display: grid;
     grid-template-columns: 10% auto 10%;
-    grid-template-rows: 1vh 10vh 1vh 10vh 1vh 10vh auto;
+    grid-template-rows: 1vh 8vh 1vh 1vh 10vh 1vh 10vh 1vh 10vh auto;
     grid-template-areas:
+      '. . .'
+      '. profile .'
+      '. . .'
       '. . .'
       '. instructors .'
       '. . .'
@@ -110,5 +116,5 @@
       '. managers .'
       '. . .';
     width: 100%;
-    height: 90vh;
+    height: 100vh;
 }

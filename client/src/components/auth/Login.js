@@ -3,7 +3,8 @@ import { Link } from "react-router-dom";
 import PropTypes from "prop-types";
 import { connect } from "react-redux";
 import { loginUser } from "../../actions/authActions";
-import classnames from "classnames";
+// import classnames from "classnames";
+import './LoginRegister.css';
 
 class Login extends Component {
   constructor() {
@@ -44,7 +45,10 @@ class Login extends Component {
   render() {
     const { errors } = this.state;
     return (
-      <div className="container">
+      <div className="App">
+      <div className = "App__Aside">Hello</div>
+      <div className="App_Form">Hello</div>
+      {/* <div className="container">
         <div style={{ marginTop: "4rem" }} className="row">
           <div className="col s8 offset-s2">
             <Link to="/" className="btn-flat waves-effect">
@@ -103,14 +107,14 @@ class Login extends Component {
                     marginTop: "1rem"
                   }}
                   type="submit"
-                  className="btn btn-large waves-effect waves-light hoverable blue accent-3"
-                >
+                  className="btn btn-large waves-effect waves-light hoverable blue accent-3">
                   Login
                 </button>
               </div>
             </form>
           </div>
         </div>
+      </div> */}
       </div>
     );
   }
